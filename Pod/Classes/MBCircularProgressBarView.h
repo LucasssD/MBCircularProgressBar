@@ -130,6 +130,9 @@ IB_DESIGNABLE
  * @param value the new value
  * @param duration animation duration in seconds
  */
+@property (nonatomic,assign) IBInspectable BOOL      countdown;
 -(void)setValue:(CGFloat)value animateWithDuration:(NSTimeInterval)duration;
+
+-(void)setValue:(CGFloat)value withColor:(UIColor *)color animateWithDuration:(NSTimeInterval)duration;
 
 @end

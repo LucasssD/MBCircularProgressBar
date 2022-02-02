@@ -277,6 +277,15 @@
 -(void)setValue:(CGFloat)value animateWithDuration:(NSTimeInterval)duration{
     [self progressLayer].animationDuration = duration;
     [self progressLayer].animated = YES;
+    [self progressLayer].progressColor = [UIColor redColor];
+    [self progressLayer].value = value;
+    
+}
+
+-(void)setValue:(CGFloat)value withColor:(UIColor *)color animateWithDuration:(NSTimeInterval)duration{
+    [self progressLayer].animationDuration = duration;
+    [self progressLayer].animated = YES;
+    [self progressLayer].progressColor = color;
     [self progressLayer].value = value;
 }
 
